@@ -1,0 +1,164 @@
+body {
+    font-family: Merriweather;
+    margin: 0;
+    padding: 0;
+   /* background-image: url('background1.jpeg'); */
+  /* background-color:rgba(221, 210, 189, 0.9); */
+  background-image: url('https://i.pinimg.com/564x/72/83/21/728321023365b7d78f4db9189ba05689.jpg');
+  
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center ; 
+    
+  }
+  
+  header {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 40px;
+    background-image: url(https://i.pinimg.com/564x/b6/94/8a/b6948af79d7c52c797323e031990051c.jpg);
+    color: white;
+  }
+  
+  
+  .logo p{
+        font-size: 40px; 
+        font-weight: bold; 
+        margin: 0; 
+    }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 40px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: text-shadow 0.1s ease;
+  }
+  
+  nav ul li a:hover {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    color: rgb(255, 85, 0);
+  }
+  
+  
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color: #ffffff; 
+    background-image: none; 
+  }
+  
+  section {
+    padding: 20px;
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; 
+  }
+  
+  section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  section.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+  
+  #heading {
+    text-align: center;
+    font-size: 80px;
+    padding: 4% 4% 4% 4%;
+    opacity: 0; 
+    animation: fadeIn 1s forwards; /
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  #heading.fade-out {
+    animation: fadeOut 1s forwards; 
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+  
+  h2{
+    font-size: 38px; 
+    font-family: 'Caveat', 'Lobster' ;
+  }
+  
+  .Images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  
+  .Images img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(35, 35, 35, 0.5);
+  }
+  
+  p {
+    font-family: 'Anton', 'Anton'; 
+    font-size: 18px; 
+    line-height: 1.6; 
+  }
+  
+  footer {
+    background-color: rgba(41, 41, 41, 0.9);
+    color: rgb(255, 255, 255);
+    padding: 1px 5px; 
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 10px; 
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer-links li a:hover {
+    color:rgb(101, 101, 83);
+  }
